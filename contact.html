@@ -88,12 +88,15 @@
                             <a href="#" style="color: #fad946;">
                                 <i class="fa-2x fa-brands fa-instagram"></i>
                             </a>
+                            <a href="#" style="color: #fad946;">
+                                <i class="fa-2x fa-brands fa-whatsapp"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="row align-items-center col-lg-6" style="height: 100%;">
                     <div class="contact-form">
-                        <form action="https://formsubmit.co/official.oxfortmedia@gmail.com" id="form" method="POST">
+                        <form action="https://formsubmit.co/contact@higrow.in" id="form" method="POST">
                             <input type="hidden" name="_captcha" value="true">
                             <div class="row justify-content-center">
                                 <h2 class="col-7 text-center my-3 text-uppercase highlight">Contact Us</h2>
@@ -197,7 +200,7 @@
                 <ul class="px-1 py-4">
                     <li class="py-2">
                         <i class="fa-solid fa-regular fa-envelope"></i>
-                        <span class="pl-2">official.oxfortmedia@gmail.com</span>
+                        <span class="pl-2">contact@higrow.in</span>
                     </li>
                     <li class="py-2">
                         <i class="fa-solid fa-phone"></i>
@@ -209,14 +212,17 @@
                     </li>
                     <li class="py-2">
                         <div class="social-container py-1">
-                            <a href="#" style="color: #fad946;">
+                            <a href="#">
                                 <i class="fa-2x fa-brands fa-facebook"></i>
                             </a>
-                            <a href="#" style="color: #fad946;">
+                            <a href="#">
                                 <i class="fa-2x fa-brands fa-twitter"></i>
                             </a>
-                            <a href="#" style="color: #fad946;">
+                            <a href="#">
                                 <i class="fa-2x fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-2x fa-brands fa-whatsapp"></i>
                             </a>
                         </div>
                     </li>
@@ -237,6 +243,12 @@
         ScrollOut({
             targets: ".heading,.desc,.contact-hero *,footer *"
         });
+        
+        const q = window.location.search;
+        const param = new URLSearchParams(q);
+        const free = param.get("free");
+        if (free === "yes")
+            $("#service option[value='Free Consultation'").attr("selected", "selected");
 
         // const selector = document.querySelector(".service-selector");
         // $(selector).mousedown(e => {
