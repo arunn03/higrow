@@ -1087,10 +1087,10 @@ footer *[data-scroll="in"] {
 }
 
 .career-hero h3 {
-    font-weight: 100;
+    font-weight: 400;
 }
 
-.career-hero button {
+.career-hero a.btn {
     background-color: #fad946;
     font-size: 1.3em;
 }
@@ -1261,6 +1261,7 @@ select {
 
 .index-about h2 {
     padding-bottom: 20px;
+    line-height: 1.7;
     border-bottom: 5px solid #fad946;
 }
 
@@ -1418,7 +1419,7 @@ select {
 
 .career-form .service-selector::after {
     top: 47%;
-    right: 10%;
+    right: 5%;
 }
 
 footer {
@@ -1605,6 +1606,7 @@ footer li span {
     }
 
     .index-about img {
+        max-width: 100%;
         float: none;
     }
 
