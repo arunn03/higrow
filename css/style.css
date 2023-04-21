@@ -65,16 +65,17 @@ body {
     content: "";
     width: 20px;
     height: 20px;
-    transform: rotate(45deg);
+    transform: rotate(45deg) translateX(-50%);
     background-color: rgb(36, 36, 36);
     position: absolute;
-    top: -10px;
-    left: 230px;
+    top: 0;
+    left: 50%;
 }
 
 #mainNavbar .dropdown-menu .dropdown-item {
     color: white;
     transition: .2s;
+    white-space: unset;
 }
 
 #mainNavbar .dropdown-menu .dropdown-item:hover {
@@ -832,7 +833,8 @@ footer *[data-scroll="in"] {
 
 .native-sec-1 h1 {
     padding: 0 20px;
-    font-size: 5em;
+    font-size: 4.5em;
+    text-align: center;
     text-shadow: 15px 15px 35px rgba(0, 0, 0, 0.459);
 }
 
@@ -1028,7 +1030,7 @@ footer *[data-scroll="in"] {
     border-radius: 20px;
     color: white;
     min-height: max-content;
-    height: 370px;
+    /* height: 370px; */
     font-size: larger;
     transition: .5s ease-out;
     display: inline-block;
@@ -1311,18 +1313,22 @@ select {
     display: grid;
     margin: 0 auto;
     width: 90%;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     grid-auto-rows: 1fr;
 }
 
 .index-services .grid-item {
-    margin: 10%;
+    margin: 7%;
     border-radius: .4rem;
     overflow: hidden;
     box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: .2s ease-out;
     height: fit-content;
+}
+
+.index-services .grid-item h1 {
+    font-size: 2rem;
 }
 
 .index-services .grid-item:hover {
@@ -1340,7 +1346,7 @@ select {
 
 .index-services .card-content {
     padding: 2rem;
-    height: 256px;
+    height: 300px;
 }
 
 .index-services .links a {
@@ -1529,9 +1535,27 @@ footer li span {
     }
 }
 
+@media screen and (max-width: 430px) {
+    .grid .grid-item {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 530px) {
     .index-hero {
         font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 570px) {
+    .clients-sec-1 .field .field-card {
+        height: 370px;
+    }
+
+    .field-container {
+        padding: 0 10%;
     }
 }
 
@@ -1565,7 +1589,7 @@ footer li span {
 
     .native-sec-1 h1 {
         text-align: center;
-        font-size: 4em;
+        font-size: 3em;
     }
 
     .native-sec-1 {
@@ -1594,12 +1618,16 @@ footer li span {
     }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
     #mainNavbar .dropdown-menu {
         border: 0;
         left: -200px;
         width: 100%;
     }
+    
+}
+
+@media screen and (max-width: 992px) {
 
     .contact-form label {
         color: white;
