@@ -1279,9 +1279,9 @@ select {
 }
 
 .index-about {
+    margin-top: 100px;
     position: relative;
     background-color: white;
-    padding: 100px 0;
     z-index: 10;
 }
 
