@@ -1279,6 +1279,7 @@ select {
 }
 
 .index-about {
+    overflow: hidden;
     margin-top: 100px;
     position: relative;
     background-color: white;
