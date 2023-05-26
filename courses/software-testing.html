@@ -26,24 +26,41 @@
     <style>
         .course-container {
             display: none;
-            position: absolute;
+            position: fixed;
+            top: 0;
             width: 100%;
             height: 100%;
-            z-index: 10;
+            z-index: 1021;
             background: linear-gradient(rgba(0, 0, 0, 0.663), rgba(0, 0, 0, 0.663));
         }
 
         .course-details {
             padding: 50px;
-            z-index: 10;
+            z-index: 1021;
             height: max-content;
             width: 70%;
+            height: max-content;
             background-color: white;
             border-radius: 30px;
             position: relative;
             top: 50%;
             left: 50%;
             transform: translateX(-50%) translateY(-50%);
+        }
+
+        .btn-expand {
+            border: none;
+            background: none;
+            transition: .3s ease-out;
+        }
+
+        .btn-expand:focus {
+            outline: none;
+        }
+
+        .sub-course-list {
+            list-style-type: none;
+            padding: 0;
         }
     </style>
 </head>
@@ -216,14 +233,14 @@
 
     <!-- Header Start -->
     <div class="container-fluid"
-        style="margin-bottom: 90px; background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/data-analytics-header.jpg), no-repeat center center; background-size: cover;">
+        style="margin-bottom: 90px; background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/software-testing-header1.jpg), no-repeat center center; background-size: cover;">
         <div class="container">
             <div class="d-flex flex-column justify-content-center" style="min-height: 300px">
-                <h3 class="display-4 text-white text-uppercase">Data Analytics</h3>
+                <h3 class="display-4 text-white text-uppercase">Software Testing</h3>
                 <div class="d-inline-flex text-white">
                     <p class="m-0 text-uppercase"><a class="text-white" href="./index.html">Home</a></p>
                     <i class="fa fa-angle-double-right pt-1 px-3"></i>
-                    <p class="m-0 text-uppercase">Data Analytics</p>
+                    <p class="m-0 text-uppercase">Software Testing</p>
                 </div>
             </div>
         </div>
@@ -236,7 +253,7 @@
         <div class="container py-5">
             <div class="text-center mb-5">
                 <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Courses</h5>
-                <h1>Data Analytic Courses</h1>
+                <h1>Software Testing Courses</h1>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4">
@@ -247,7 +264,8 @@
                                 <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
                                 <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>05h 00m</small>
                             </div>
-                            <a class="h5" href="">Excel Mastery: Beyond the Basics</a>
+                            <a class="h5" href="">Fundamentals of Software Testing: Manual Techniques & Best
+                                Practices</a>
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(25)</small>
@@ -266,12 +284,29 @@
                                 <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
                                 <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>10h 00m</small>
                             </div>
-                            <a class="h5" href="">Database Querying and Management with SQL</a>
+
+                            <a class="h5" href="">Automated Testing Mastery: Streamlining Software Quality Assurance</a>
+                            <!-- <button class="h5 d-flex btn-expand">
+                                <p class="text-left m-0">
+                                    Automated Testing Mastery: Streamlining Software QA
+                                </p>
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </button> -->
+
+                            <!-- <ul class="sub-course-list h5 m-0">
+                                <li class="sub-course py-2 border-top">Java</li>
+                                <li class="sub-course py-2 border-top">Java</li>
+                                <li class="sub-course py-2 border-top">Java</li>
+                                <li class="sub-course py-2 border-top">Java</li>
+                                <li class="sub-course py-2 border-top">Java</li>
+                                <li class="sub-course py-2 border-top">Java</li>
+                                <li class="sub-course py-2 border-top">Java</li>
+                            </ul> -->
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(25)</small>
                                     </h6>
-                                    <h5 class="m-0">₹14,999</h5>
+                                    <h5 class="m-0">₹24,999</h5>
                                 </div>
                             </div>
                         </div>
@@ -285,7 +320,7 @@
                                 <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
                                 <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>15h 00m</small>
                             </div>
-                            <a class="h5" href="">Python Programming: From Fundamentals to Advanced</a>
+                            <a class="h5" href="">Automated Testing Masterclass: Python<br><br></a>
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(25)</small>
@@ -304,7 +339,7 @@
                                 <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
                                 <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>05h 00m</small>
                             </div>
-                            <a class="h5" href="">Power BI Essentials: Data Visualization Fundamentals</a>
+                            <a class="h5" href="">Automated Testing Masterclass: Java<br><br></a>
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(25)</small>
@@ -323,7 +358,64 @@
                                 <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
                                 <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>05h 00m</small>
                             </div>
-                            <a class="h5" href="">Tableau Fundamentals: Data Visualization and Analytics</a>
+                            <a class="h5" href="">Automated Testing Masterclass: Selenium<br><br></a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(25)</small>
+                                    </h6>
+                                    <h5 class="m-0">₹14,999</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="rounded overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/course-5.jpg" alt="">
+                        <div class="bg-secondary p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
+                                <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>05h 00m</small>
+                            </div>
+                            <a class="h5" href="">Automated Testing Masterclass: API Testing<br><br></a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(25)</small>
+                                    </h6>
+                                    <h5 class="m-0">₹14,999</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="rounded overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/course-5.jpg" alt="">
+                        <div class="bg-secondary p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
+                                <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>05h 00m</small>
+                            </div>
+                            <a class="h5" href="">Automated Testing Masterclass: Jenkins<br><br></a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(25)</small>
+                                    </h6>
+                                    <h5 class="m-0">₹14,999</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="rounded overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/course-5.jpg" alt="">
+                        <div class="bg-secondary p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
+                                <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>05h 00m</small>
+                            </div>
+                            <a class="h5" href="">Automated Testing Masterclass: Maven<br><br></a>
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(25)</small>
