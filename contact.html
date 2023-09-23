@@ -32,6 +32,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./courses/index.html">Courses</a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
                             aria-expanded="false">
@@ -242,7 +245,7 @@
         ScrollOut({
             targets: ".heading,.desc,.contact-hero *,footer *"
         });
-        
+
         const q = window.location.search;
         const param = new URLSearchParams(q);
         const free = param.get("free");
