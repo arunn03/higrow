@@ -1586,7 +1586,7 @@ footer li span {
   color: white;
 }
 
-.heading {
+.testimonial .heading {
   text-align: center;
   color: #454343;
   font-size: 30px;
@@ -1596,10 +1596,10 @@ footer li span {
   text-transform: uppercase;
   z-index: 999;
 }
-.white-heading {
+.testimonial .white-heading {
   color: #ffffff;
 }
-.heading:after {
+.testimonial .heading:after {
   content: " ";
   position: absolute;
   top: 100%;
@@ -1612,18 +1612,18 @@ footer li span {
   background-repeat: no-repeat;
   background-position: center;
 }
-.white-heading:after {
+.testimonial .white-heading:after {
   background: url(https://i.ibb.co/d7tSD1R/heading-line-white.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.heading span {
+.testimonial .heading span {
   font-size: 18px;
   display: block;
   font-weight: 500;
 }
-.white-heading span {
+.testimonial .white-heading span {
   color: #ffffff;
 }
 /*-----Testimonial-------*/
