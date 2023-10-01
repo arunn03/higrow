@@ -1520,6 +1520,16 @@ select {
   margin-left: 1.5rem;
 }
 
+.course-section {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.course-section .course {
+  box-shadow: 8px 10px 15px rgb(0, 0, 0, 0.125);
+}
+
 .logo-hero {
   position: relative;
   z-index: 10;
