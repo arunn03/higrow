@@ -94,7 +94,7 @@
         <div class="container py-5">
             <div class="row align-items-center text-center text-lg-left">
                 <div class="col-lg-5">
-                    <img class="img-fluid rounded mb-4 mb-lg-0" src="./images/about.jpg" alt="">
+                    <img class="img-fluid rounded mb-4 mb-lg-0" src="./images/about-img-1.jpg" alt="">
                 </div>
                 <div class="col-lg-7">
                     <div class="mb-4">
@@ -124,7 +124,7 @@
         <div class="container py-5">
             <div class="row align-items-center text-center text-lg-left">
                 <div class="col-lg-5 order-lg-2">
-                    <img class="img-fluid rounded mb-4 mb-lg-0" src="./images/about.jpg" alt="">
+                    <img class="img-fluid rounded mb-4 mb-lg-0" src="./images/about-img-2.jpg" alt="">
                 </div>
                 <div class="col-lg-7 order-lg-1">
                     <div class="mb-4">
@@ -153,7 +153,7 @@
         <div class="container py-5">
             <div class="row align-items-center text-center text-lg-left">
                 <div class="col-lg-5">
-                    <img class="img-fluid rounded mb-4 mb-lg-0" src="./images/about.jpg" alt="">
+                    <img class="img-fluid rounded mb-4 mb-lg-0" src="./images/about-img-3.jpg" alt="">
                 </div>
                 <div class="col-lg-7">
                     <div class="mb-4">
@@ -317,52 +317,48 @@
                 <button class="enroll-btn mt-4">Enroll Now</button>
             </div>
             <div class="row justify-content-center w-100 mx-auto">
-                <div class="col-10 col-md-5 col-xl-3 my-3">
-                    <div class="d-md-flex align-items-md-start justify-content-md-center text-center text-md-left">
-                        <div
-                            class="icon-container my-3 my-md-0 mx-auto mx-md-0 d-flex justify-content-center align-items-center">
+                <div class="col col-md-5 col-xl-3 my-3">
+                    <div class="d-flex align-items-start justify-content-center">
+                        <div class="icon-container d-flex justify-content-center align-items-center">
                             <img src="./images/project-icon.png" alt="project icon">
                         </div>
-                        <div class="count px-4 my-4 my-md-0">
+                        <div class="count px-4">
                             <h2 class="d-inline-block num">50</h2>
                             <h2 class="d-inline-block">+</h2>
                             <h5>Projects Completed</h5>
                         </div>
                     </div>
                 </div>
-                <div class="col-10 col-md-5 col-xl-3 my-3">
-                    <div class="d-md-flex align-items-md-start justify-content-md-center text-center text-md-left">
-                        <div
-                            class="icon-container my-3 my-md-0 mx-auto mx-md-0 d-flex justify-content-center align-items-center">
+                <div class="col col-md-5 col-xl-3 my-3">
+                    <div class="d-flex align-items-start justify-content-center">
+                        <div class="icon-container d-flex justify-content-center align-items-center">
                             <img src="./images/thumbs-up-iconpng.png" alt="clients icon">
                         </div>
-                        <div class="count px-4 my-4 my-md-0">
+                        <div class="count px-4">
                             <h2 class="d-inline-block num">98</h2>
                             <h2 class="d-inline-block">%</h2>
                             <h5>Positive Ratings</h5>
                         </div>
                     </div>
                 </div>
-                <div class="col-10 col-md-5 col-xl-3 my-3">
-                    <div class="d-md-flex align-items-md-start justify-content-md-center text-center text-md-left">
-                        <div
-                            class="icon-container my-3 my-md-0 mx-auto mx-md-0 d-flex justify-content-center align-items-center">
+                <div class="col col-md-5 col-xl-3 my-3">
+                    <div class="d-flex align-items-start justify-content-center">
+                        <div class="icon-container d-flex justify-content-center align-items-center">
                             <img src="./images/team-icon.png" alt="team icon">
                         </div>
-                        <div class="count px-4 my-4 my-md-0">
+                        <div class="count px-4">
                             <h2 class="d-inline-block num">90</h2>
                             <h2 class="d-inline-block">%</h2>
                             <h5>Trusted Users</h5>
                         </div>
                     </div>
                 </div>
-                <div class="col-10 col-md-5 col-xl-3 my-3">
-                    <div class="d-md-flex align-items-md-start justify-content-md-center text-center text-md-left">
-                        <div
-                            class="icon-container my-3 my-md-0 mx-auto mx-md-0 d-flex justify-content-center align-items-center">
+                <div class="col col-md-5 col-xl-3 my-3">
+                    <div class="d-flex align-items-start justify-content-center">
+                        <div class="icon-container d-flex justify-content-center align-items-center">
                             <img src="./images/company-icon.png" alt="company icon">
                         </div>
-                        <div class="count px-4 my-4 my-md-0">
+                        <div class="count px-4">
                             <h2 class="d-inline-block num">7</h2>
                             <h2 class="d-inline-block">+</h2>
                             <h5>Years of Expertise</h5>
@@ -371,6 +367,13 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="container text-center social-media-logos mt-5">
+        <h1 class="heading text-uppercase">
+            We are <span style="color: #fad946">specialized</span> in
+        </h1>
+        <img src="./images/social-media-logos.png" alt="social-media-logos" class="img-fluid">
     </div>
 
 
@@ -554,6 +557,12 @@
         ScrollOut({
             targets:
                 ".index-about *,.index-services *,.picture,.heading,.desc,footer *",
+        });
+        $(document).ready(function () {
+            $(".count-section .count h2.num").counterUp({
+                delay: 10,
+                time: 1000
+            });
         });
 
     </script>
